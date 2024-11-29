@@ -13,9 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * 菜品管理
@@ -99,9 +97,9 @@ public class DishController {
      */
     @GetMapping("/list")
     @ApiOperation(value = "根据分类ID查询菜品")
-    public Result<Dish> list(Integer categoryId){
-        Dish dish = dishService.list(categoryId);
-        return Result.success(dish);
+    public Result<List<Dish>> list(Long categoryId){
+        List<Dish> dishList = dishService.list(categoryId);
+        return Result.success(dishList);
     }
 
     /**

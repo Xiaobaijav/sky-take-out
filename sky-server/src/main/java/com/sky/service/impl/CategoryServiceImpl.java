@@ -11,7 +11,7 @@ import com.sky.entity.Category;
 import com.sky.exception.DeletionNotAllowedException;
 import com.sky.mapper.CategoryMapper;
 import com.sky.mapper.DishMapper;
-import com.sky.mapper.SetmealMapper;
+import com.sky.mapper.SetMealMapper;
 import com.sky.result.PageResult;
 import com.sky.service.CategoryService;
 import org.springframework.beans.BeanUtils;
@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
     private DishMapper dishMapper;
 
     @Autowired
-    private SetmealMapper setmealMapper;
+    private SetMealMapper setmealMapper;
     /**
      * 分类分页查询
      * @param categoryPageQueryDTO

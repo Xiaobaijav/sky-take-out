@@ -50,7 +50,7 @@ public interface DishService {
      * @param categoryId
      * @return
      */
-    Dish list(Integer categoryId);
+    List<Dish> list(Long categoryId);
 
     /**
      * 批量删除菜品

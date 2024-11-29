@@ -54,10 +54,10 @@ public interface DishMapper {
 
     /**
      * 根据发分类ID查询菜品
-     * @param categoryId
+     * @param dish
      * @return
      */
-    Dish list(Integer categoryId);
+    List<Dish> list(Dish dish);
 
     /**
      * 根据ID删除菜品
@@ -79,4 +79,19 @@ public interface DishMapper {
      * @param ids
      */
     void deleteByIds(List<Long> ids);
+
+    /**
+     * 根据套餐id查询菜品
+     *
+     * @param setmealId
+     * @return
+     */
+    @Select(value = "SELECT\n" +
+            "  d.* \n" +
+            "FROM\n" +
+            "  dish d\n" +
+            "  LEFT JOIN setmeal_dish sd ON d.id = sd.dish_id \n" +
+            "WHERE\n" +
+            "  sd.setmeal_id = #{setmealId}")
+    List<Dish> getBySetmealId(Long setmealId);
 }
