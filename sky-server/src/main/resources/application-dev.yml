@@ -11,3 +11,7 @@ sky:
     access-key-id: LTAI5tAZxLRu6twAXf4uG5kK
     access-key-secret: hFX64mIH4c54ri2qRB6IkDUZwvMKAp
     bucket-name: yds-web-tilas
+  redis:
+    host: 192.168.1.154
+    port: 6379
+    password: 123456
