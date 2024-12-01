@@ -57,4 +57,11 @@ public interface DishService {
      * @param ids
      */
     void delBatch(List<Long> ids);
+
+    /**
+     * 根据分类ID查询对应的菜品以及口味
+     * @param dish
+     * @return
+     */
+    List<DishVO> listWithFlavor(Dish dish);
 }

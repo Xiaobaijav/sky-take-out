@@ -1,4 +1,5 @@
 package com.sky.controller.admin;
+import java.util.Optional;
 
 import com.sky.result.Result;
 import io.swagger.annotations.Api;
@@ -41,8 +42,8 @@ public class ShopController {
      */
     @GetMapping("/status")
     @ApiOperation(value = "查询营业状态")
-    public Result<Integer> setStatus(){
-        Integer shopStatus = (Integer) redisTemplate.opsForValue().get("SHOP_STATUS");
+    public Result<Integer> getStatus(){
+        Integer shopStatus = (Integer) Optional.ofNullable(redisTemplate.opsForValue().get("SHOP_STATUS")).orElse(0);
         return Result.success(shopStatus);
     }
 }

@@ -94,4 +94,11 @@ public interface DishMapper {
             "WHERE\n" +
             "  sd.setmeal_id = #{setmealId}")
     List<Dish> getBySetmealId(Long setmealId);
+
+    /**
+     * 根据分类ID查询菜品
+     * @param dish
+     * @return
+     */
+    List<DishVO> listWithFlavor(Dish dish);
 }

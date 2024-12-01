@@ -59,5 +59,8 @@
         </where>
         order by create_time desc
     </select>
+    <select id="listWithFlavor" resultType="com.sky.vo.DishVO">
+
+    </select>
 
 </mapper>
