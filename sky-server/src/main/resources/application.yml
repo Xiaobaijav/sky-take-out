@@ -56,3 +56,7 @@ sky:
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+  shop:
+    address: 四川省绵阳市涪城区青龙大道中段59号
+  baidu:
+    ak: 5h0I06BommejR5qRT89XiTSyw4GHkFO6
