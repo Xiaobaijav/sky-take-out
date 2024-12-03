@@ -14,6 +14,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Mapper
@@ -86,4 +87,12 @@ public interface SetMealMapper {
      * @return
      */
     List<Setmeal> getCatecoryById(Setmeal setmeal);
+
+    /**
+     * 查询套餐
+     * @param map
+     * @return
+     */
+    Integer countByMap(HashMap<String, Integer> map);
+
 }

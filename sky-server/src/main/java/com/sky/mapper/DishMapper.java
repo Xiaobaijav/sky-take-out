@@ -10,6 +10,7 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Mapper
@@ -101,4 +102,11 @@ public interface DishMapper {
      * @return
      */
     List<DishVO> listWithFlavor(Dish dish);
+
+    /**
+     * 菜品查询
+     * @param map
+     * @return
+     */
+    Integer countByMap(HashMap<String, Integer> map);
 }
