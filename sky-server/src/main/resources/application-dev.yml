@@ -7,14 +7,14 @@ sky:
     username: root
     password: 123456
   alioss:
-    endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tAZxLRu6twAXf4uG5kK
-    access-key-secret: hFX64mIH4c54ri2qRB6IkDUZwvMKAp
-    bucket-name: yds-web-tilas
+    endpoint: 
+    access-key-id: 
+    access-key-secret: 
+    bucket-name: 
   redis:
-    host: 192.168.1.154
-    port: 6379
-    password: 123456
+    host: 
+    port: 
+    password: 
   wechat:
-    appid: wx3800ff89199ca1aa
-    secret: bb305c6f6feb367c8c83a0cf066dac86
+    appid:
+    secret: 
